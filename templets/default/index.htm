@@ -1,0 +1,239 @@
+﻿<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>首页</title>
+        <meta name="keywords" content="HTML5高端大气响应式网络科技公司网站模板" />
+        <meta name="description" content="HTML5高端大气响应式网络科技公司网站模板下载。" /> 
+        <meta name="author" content="" />
+        <meta name="copyright" content="" />
+        <link href="{dede:global.cfg_templets_skin/}/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+        <link href="{dede:global.cfg_templets_skin/}/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="{dede:global.cfg_templets_skin/}/css/animate.min.css" rel="stylesheet" type="text/css" />
+        <link href="{dede:global.cfg_templets_skin/}/css/global.css" rel="stylesheet" type="text/css" />
+        <link href="{dede:global.cfg_templets_skin/}/css/lib.css" rel="stylesheet" type="text/css" />
+        <link href="{dede:global.cfg_templets_skin/}/css/style.css" rel="stylesheet" type="text/css" />
+        <script src="{dede:global.cfg_templets_skin/}/js/jquery-1.9.1.min.js"></script>
+        <script src="{dede:global.cfg_templets_skin/}/js/global.js"></script>
+        <script src="{dede:global.cfg_templets_skin/}/js/cn.js"></script>
+        <script src="{dede:global.cfg_templets_skin/}/js/checkform.js"></script>
+        <script src="{dede:global.cfg_templets_skin/}/js/wow.js"></script>
+        <script src="{dede:global.cfg_templets_skin/}/js/imagesloaded.min.js"></script>
+        <script src="{dede:global.cfg_templets_skin/}/js/countup.js"></script>
+        <script src="{dede:global.cfg_templets_skin/}/js/bootstrap.min.js"></script>
+        <script>
+            jQuery(window).scrollTop(0);
+            jQuery('html,body').scrollTop(0);
+            new WOW().init({
+                mobile: false
+            });
+
+            $(function() {
+                setTimeout(function() {
+                    $('#body').show();
+                },
+                500);
+            })
+        </script>
+    </head>
+    
+    <body>
+        {dede:include filename="head.htm"/}
+        <div id="header-blank"></div>
+        <div id="body" class="trans">
+            <div id="banner" class="relative hide992">
+                <div class="bd over">
+                    <div class="bar relative fz0 nowrap">
+                        <div class="item relative inline-block text-center fz0 over item-1"> 
+                            <img src="{dede:global.cfg_templets_skin/}/picture/1-1f92z915060-l.jpg" alt="" class="max-w100">
+                            <a class="absolute">
+                            </a>
+                        </div>
+                        <div class="item relative inline-block text-center fz0 over item-1">
+                            <img src="{dede:global.cfg_templets_skin/}/picture/1-1f92z915190-l.jpg" alt="" class="max-w100">
+                            <a class="absolute"></a>
+                        </div>
+                        <div class="item relative inline-block text-center fz0 over item-1">
+                            <img src="{dede:global.cfg_templets_skin/}/picture/1-1f929111s30-l.jpg" alt="" class="max-w100">
+                            <a class="absolute"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="small-banner" class="relative show992">
+                <div class="bd over">
+                    <div class="bar relative fz0 nowrap">
+                    </div>
+                </div>
+            </div>
+            <div class="blank25">
+            </div>
+            <div id="products" class="index">
+                <div class="index-title text-center wow fadeInUp">
+                    {dede:type typeid='2'}[field:typename/]{/dede:type}
+                </div>
+                <div class="index-brief text-center wow fadeInUp">
+                	20余年的营造过程，绿城不断汲取中国传统与西方现代的经验，不断深入与深化对产品的理解，构建并倡导了国内领先的住宅价值。
+                </div>
+                
+                <div class="category-list text-center fz0 hide992 wow fadeInUp">
+                    <a href="#"​ class="item inline-block trans" cid="6" rel="nofollow">
+                       二手房源
+                    </a>
+                    <a href="#"​ class="item inline-block trans" cid="6" rel="nofollow">
+                        新居民房
+                    </a>
+                    <a href="#"​ class="item inline-block trans" cid="6" rel="nofollow">
+              企业租房         
+                    </a>
+                    <a href="#"​ class="item inline-block trans" cid="6" rel="nofollow">
+                       商业办公
+                    </a>
+                    <a href="#"​ class="item inline-block trans" cid="6" rel="nofollow">
+                   新开楼盘      
+                    </a>
+                    <a href="#"​ class="item inline-block trans" cid="6" rel="nofollow">
+                     会议场地
+                    </a>
+                    <a href="#"​ class="item inline-block trans" cid="6" rel="nofollow">
+                        设计建筑
+                    </a>
+                </div>
+                
+                <div class="products-bg trans">
+                    <div class="wrap">
+                        <div id="products-box" class="over">
+                            <div class="products-list relative fz0 trans">
+                            	
+                            	{dede:arclist row="6" typeid="2"}
+									<div class="item inline-block absolute wow fadeInUp" cid="0" status="on" style="padding-bottom: 30px;">
+                                    <div class="main trans">
+                                        <div class="cover scale relative">
+                                            <a class="trans scale-img max-w100" style="display: block; width: 400px; height: 250px;" ></a>
+                                            <div class="img absolute text-center fz0">
+                                                <img src="[field:litpic/]" alt="[field:title function='html2text(@me)'/]" class="trans scale-img">
+                                            </div>
+                                            <div class="opt absolute trans hide768">
+                                                <div class="button-bg border-box clean">
+                                                    <a href="[field:arcurl /]"​ class="button fl trans text-center" rel="nofollow">预览</a>
+                                                    <a href="[field:arcurl /]"​ class="links fr trans">
+                                                        <i></i>详细
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="info clean">
+                                            <div class="left fl">
+                                                <div class="name" style="text-align: center;"> [field:title /]</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                     <div class="clearfix"></div>
+                                
+                                    <div class="opt-msg trans over">
+                                        <a href="[field:arcurl /]"​ class="block trans text-center" rel="nofollow">预览</a>
+                                        <a href="[field:arcurl /]"​ class="block trans text-center">
+                                            <i></i>详细
+                                        </a>
+                                    </div>
+                                </div>
+                                
+								{/dede:arclist}
+                            	<div class="clearfix"></div>
+                            
+                            </div>
+                            <div class="box-button text-center fz0 wow fadeInUp">
+                                <a href="/"​ class="more-list inline-block trans">
+                                    <i class="trans middle relative"></i>
+                                </a>
+                               </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="blank15"></div>
+            <div class="blank15"></div>
+            <!--合作商家-->
+            <div class="index-cooperation wrap">
+                <div class="index-title text-center wow fadeInUp">
+                     {dede:type typeid='9'}[field:typename/]{/dede:type}
+                </div>
+                <div class="index-brief text-center wow fadeInUp">服务了哪些客户很重要 用心 更重要！</div>
+                <div class="blank20"></div>
+                <div class="cooperation-box s5 relative hide768 wow fadeInUp">
+                    <div class="bd over">
+                        <div class="bar trans relative fz0 nowrap">
+                        	{dede:arclist row="5" typeid="9"}
+								<div class="item inline-block border-box trans">
+	                                <a class="text-center block border-box trans fz0 grayscale" title="周大生" rel="nofollow">
+	                                    <img src="[field:litpic/]" alt="[field:title function='html2text(@me)'/]" class="max-w100 max-h100 middle grayscale-img trans">
+	                                    <span class="middle-span"></span>
+	                                </a>
+	                            </div>
+							{/dede:arclist}
+                        </div>
+                    </div>
+                    <div class="hd text-center fz0"></div>
+                </div>
+            </div>
+            
+            <div class="blank25"></div>
+            <div class="blank25"></div>
+            <div class="index-tutorial">
+                <div class="index-title text-center wow fadeInUp">
+                    {dede:type typeid='4'}[field:typename/]{/dede:type}
+                </div>
+                <div class="index-brief text-center wow fadeInUp">智能建站、零基础建站</div>
+                <div class="blank20"></div>
+                <div class="blank20"></div>
+                <div class="max-wrap clean relative wow fadeInUp">
+                    <div class="img fl hide1300">
+                        <a title="">
+                            <img src="{dede:global.cfg_templets_skin/}/picture/3da6124a3d.jpg" alt="" class="max-w100 block">
+                        </a>
+                    </div>
+                    <div class="tutorial-support absolute">
+                        <div class="table">
+                            <div class="table-cell middle">
+                                <form name="formsearch" class="support-search fl relative" action="#">
+                                    <input type="hidden" name="kwtype" value="0" />
+                                    <input type="text" class="text block border-box" name="q" value="" placeholder="在哪里设置网站关键词">
+                                    <input type="submit" class="hide" value="">
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tutorial-list clean wrap">
+                	
+                	{dede:arclist row="4" typeid="4"}
+						<div class='item wow fadeInUp fl' class="item wow fadeInUp fl">
+	                        <div class="date fl">
+	                            <div class="year">
+	                                [field:pubdate function="MyDate('Y',@me)" /]
+	                            </div>
+	                            <div class="day">
+	                                [field:pubdate function="MyDate('m-d',@me)" /]
+	                            </div>
+	                        </div>
+	                        <div class="info fl">
+	                            <div class="name text-over">
+	                                <a href="[field:arcurl /]"​ class="trans">[field:title /]</a>
+	                            </div>
+	                            <div class="brief over">[field:description/]...</div>
+	                        </div>
+	                   </div>
+					{/dede:arclist}
+                	
+                </div>
+            </div>
+          
+          {dede:include filename="footer.htm"/}  
+          </div>
+        <script src="{dede:global.cfg_templets_skin/}/js/website.js"></script>
+    </body>
+    </script>
+</html>

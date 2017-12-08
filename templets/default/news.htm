@@ -1,0 +1,109 @@
+﻿<!DOCTYPE html>
+<html>
+    
+     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>新闻</title>
+        <meta name="keywords" content="HTML5高端大气响应式网络科技公司网站模板" />
+        <meta name="description" content="HTML5高端大气响应式网络科技公司网站模板下载。" /> 
+        <meta name="author" content="" />
+        <meta name="copyright" content="" />
+        <link href="{dede:global.cfg_templets_skin/}/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+        <link href="{dede:global.cfg_templets_skin/}/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="{dede:global.cfg_templets_skin/}/css/animate.min.css" rel="stylesheet" type="text/css" />
+        <link href="{dede:global.cfg_templets_skin/}/css/global.css" rel="stylesheet" type="text/css" />
+        <link href="{dede:global.cfg_templets_skin/}/css/lib.css" rel="stylesheet" type="text/css" />
+        <link href="{dede:global.cfg_templets_skin/}/css/style.css" rel="stylesheet" type="text/css" />
+        <script src="{dede:global.cfg_templets_skin/}/js/jquery-1.9.1.min.js"></script>
+        <script src="{dede:global.cfg_templets_skin/}/js/global.js"></script>
+        <script src="{dede:global.cfg_templets_skin/}/js/cn.js"></script>
+        <script src="{dede:global.cfg_templets_skin/}/js/checkform.js"></script>
+        <script src="{dede:global.cfg_templets_skin/}/js/wow.js"></script>
+        <script src="{dede:global.cfg_templets_skin/}/js/imagesloaded.min.js"></script>
+        <script src="{dede:global.cfg_templets_skin/}/js/countup.js"></script>
+        <script src="{dede:global.cfg_templets_skin/}/js/bootstrap.min.js"></script>
+        <script>
+            jQuery(window).scrollTop(0);
+            jQuery('html,body').scrollTop(0);
+            new WOW().init({
+                mobile: false
+            });
+
+            $(function() {
+                setTimeout(function() {
+                    $('#body').show();
+                },
+                500);
+            })
+        </script>
+    </head>
+    
+    <body>
+          {dede:include filename="head.htm"/}
+        <div id="header-blank" class="show992">
+        </div>
+        <div id="body" class="trans">
+            <div id="banner" class="relative hide992">
+                <div class="bd over">
+                    <div class="bar relative fz0 nowrap">
+                        <div class="item relative inline-block text-center fz0 over item-0">
+                            <img src="{dede:global.cfg_templets_skin/}/picture/710472f909.jpg" alt="" class="max-w100">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="small-banner" class="relative show992">
+                <div class="bd over">
+                    <div class="bar relative fz0 nowrap">
+                    </div>
+                </div>
+            </div>
+            <div id="tutorial">
+                <div class="tutorial-support">
+                    <div class="wrap clean">
+                        <form name="formsearch" class="support-search fl relative" action="#" style="padding-left: 50px;">
+                            <input type="hidden" name="kwtype" value="0" />
+                            <input type="text" class="text block border-box" name="q" value="" placeholder="在哪里设置网站关键词">
+                            <input type="submit" class="hide" value="">
+                        </form>
+                        <!--<a href="#"​ class="play ico trans fl middle wow fadeInUp">视频</a>-->
+                        <div class="line fl middle">
+                        </div>
+                        <a href="#"​ class="file ico trans fl middle wow fadeInUp">
+                            新闻
+                        </a>
+                        <a href="#"​ class="question ico trans fr middle wow fadeInUp">
+                            我要提问
+                        </a>
+                    </div>
+                </div>
+                <div class="wrap">
+                    <div class="tutorial-list clean">
+                    	
+                    	{dede:arclist row="8" typeid="4"}
+		                   <div class='item wow fadeInUp fl'>
+	                            <div class="date fl">
+	                                <div class="year"> [field:pubdate function="MyDate('Y',@me)" /] </div>
+	                                <div class="day">  [field:pubdate function="MyDate('m-d',@me)" /]</div>
+	                            </div>
+	                            <div class="info fl">
+	                                <div class="name text-over">
+	                                    <a href="[field:arcurl /]"​ class="trans">[field:title /]</a>
+	                                </div>
+	                                <div class="brief over">[field:description/]... </div>
+	                            </div>
+	                       </div>
+						{/dede:arclist}
+                    	
+                    </div>
+                </div>
+            </div>
+            
+              {dede:include filename="footer.htm"/}
+        </div>
+        <script src="{dede:global.cfg_templets_skin/}/js/website.js"></script>
+    </body>
+
+</html>

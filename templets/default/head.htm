@@ -1,0 +1,58 @@
+<header class="trans border-box  ">
+            <div class="wrap clean relative">
+                <div id="logo" class="fl relative trans">
+                    <a href="index.html"​ class="relative trans">
+                        <img src="{dede:global.cfg_templets_skin/}/picture/logo.png" alt="" class="max-w100 max-h100 trans">
+                    </a>
+                </div>
+                <nav class="absolute fz0 trans border-box stopP ">
+                  
+               		 <div class="title clean show992">
+                            <a href="/"​ class="btn-close trans middle fr" onclick="ActionMenu('Close');"></a>
+                    </div>
+                
+                	 <ul class="bd over clean">
+        
+				       
+				       <li><a href='{dede:global.cfg_cmsurl/}/'><span>首页</span></a></li>
+					       {dede:channel type='top' row='6' currentstyle="
+					   <li class='on-active'><a href='~typelink~' ~rel~>
+					       	<span>~typename~</span></a></li>"}
+					  <li><a href='[field:typeurl/]' [field:rel/]><span>[field:typename/]</span></a></li>
+					       {/dede:channel}
+			  
+			    
+                    </ul>
+              
+              <style>
+              	ul li{
+              		float:left;}
+              		li a span{
+              			padding-left: 20px;
+              			padding-right: 20px;
+              			font-size: 16px;}
+              		li a{
+              			display: block;
+              		}
+              		li a:hover{
+              			color: #337ab7;
+              		}
+              .on-active{
+              	color: #337ab7;
+              }
+              
+              </style>
+		
+               </nav>
+               
+                    <div class="menu-button fr stopP show992 trans">
+	                    <a href="#"​ class="fa fa-align-justify trans" rel="nofollow"  onclick="ActionMenu();"> </a>
+	                </div>
+               
+            </div>
+        </header>
+        
+
+ 
+
+
